@@ -3,6 +3,7 @@ import { useState } from "react";
 import 'bootstrap/dist/css/bootstrap.min.css';
 import Button from 'react-bootstrap/Button';
 import Card from 'react-bootstrap/Card';
+import ListGroup from 'react-bootstrap/ListGroup';
 
 
 function App() {
@@ -26,12 +27,8 @@ function App() {
         <Card style={{ width: '18rem' }}>
           <Card.Img variant="top" src={personaje.image} />
           <Card.Body>
-            <Card.Title>Card Title</Card.Title>
-            <Card.Text>
-              Some quick example text to build on the card title and make up the
-              bulk of the card's content.
-            </Card.Text>
-            <Button variant="primary">Go somewhere</Button>
+            <Card.Title>{personaje.name}</Card.Title>
+            <ListGroup.Item>{personaje.species}</ListGroup.Item>
           </Card.Body>
         </Card>
      
