@@ -29,6 +29,7 @@ function App() {
           <Card.Body>
             <Card.Title>{personaje.name}</Card.Title>
             <ListGroup.Item>{personaje.species}</ListGroup.Item>
+            <ListGroup.Item>{personaje.status}</ListGroup.Item>
           </Card.Body>
         </Card>
      
